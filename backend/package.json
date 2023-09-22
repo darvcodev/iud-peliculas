@@ -1,0 +1,17 @@
+{
+  "name": "iud-peliculas",
+  "version": "1.0.0",
+  "description": "Proyecto de peliculas, Tecnologias web 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Darvcode",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.4.0",
+    "mongoose": "^7.1.0"
+  }
+}
