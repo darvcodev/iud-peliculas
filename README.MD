@@ -60,4 +60,4 @@ Siga estos pasos para configurar y ejecutar la aplicación:
 
 5. La aplicación de frontend se ejecutará en `http://localhost:5173`.
 
-Creado por [DARVCODE] - Fecha de Creación: Septiembre de 2023
+Creado por DARVCODE - Fecha de Creación: Septiembre de 2023
