@@ -4,6 +4,10 @@ const { main } = require("./config/database");
 
 // Rutas de la API
 const generoRoutes = require("./src/generos/routes/generoRoutes");
+const tipoRoutes = require("./src/tipos/routes/tipoRoutes");
+const productoraRoutes = require("./src/productoras/routes/productoraRoutes");
+const directorRoutes = require("./src/directores/routes/directorRoutes");
+const peliculaRoutes = require("./src/peliculas/routes/peliculaRoutes");
 
 // Inicializar la app de express
 const app = express();
@@ -16,6 +20,10 @@ app.use(express.json());
 
 // Configurar rutas de la API
 app.use("/generos", generoRoutes);
+app.use("/tipos", tipoRoutes);
+app.use("/productoras", productoraRoutes);
+app.use("/directores", directorRoutes);
+app.use("/peliculas", peliculaRoutes);
 
 // Iniciar el servidor
 const PORT = process.env.PORT || 5000;
