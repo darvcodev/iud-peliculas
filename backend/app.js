@@ -1,6 +1,6 @@
 const express = require("express");
-
 const { main } = require("./config/database");
+const cors = require("cors"); // Importa la biblioteca cors
 
 // Rutas de la API
 const generoRoutes = require("./src/generos/routes/generoRoutes");
@@ -17,6 +17,9 @@ main().catch((err) => console.log(err));
 
 // Configurar middleware para parsear JSON
 app.use(express.json());
+
+// Configurar CORS para permitir solicitudes desde cualquier origen
+app.use(cors());
 
 // Configurar rutas de la API
 app.use("/generos", generoRoutes);
