@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="text-white">
       <h1>Lista de Géneros</h1>
       <ul>
         {generos.map((genero) => (
