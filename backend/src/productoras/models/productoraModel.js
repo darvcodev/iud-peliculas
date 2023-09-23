@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const GeneroSchema = new mongoose.Schema(
+const ProductoraSchema = new mongoose.Schema(
   {
     nombre: {
       type: String,
@@ -8,8 +8,8 @@ const GeneroSchema = new mongoose.Schema(
     },
     estado: {
       type: String,
-      enum: ["Activo", "Inactivo"],
-      default: "Activo",
+      enum: ["activo", "inactivo"],
+      default: "activo",
       required: true,
     },
     fecha_creacion: {
@@ -34,4 +34,4 @@ const GeneroSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("productoras", GeneroSchema);
+module.exports = mongoose.model("productoras", ProductoraSchema);

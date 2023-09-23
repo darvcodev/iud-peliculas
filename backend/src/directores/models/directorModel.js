@@ -8,8 +8,8 @@ const DirectorSchema = new mongoose.Schema(
     },
     estado: {
       type: String,
-      enum: ["Activo", "Inactivo"],
-      default: "Activo",
+      enum: ["activo", "inactivo"],
+      default: "activo",
       required: true,
     },
     fecha_creacion: {
