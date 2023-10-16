@@ -62,3 +62,19 @@ exports.delete = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.findByGenero = async (req, res, next) => {
+  const generoId = req.params.generoId;
+
+  try {
+    const peliculas = await Pelicula.find({ generoPrincipal: generoId });
+
+    if (peliculas.length === 0) {
+      return res.status(404).json({ message: 'No se encontraron películas para este género.' });
+    }
+
+    res.status(200).json(peliculas);
+  } catch (error) {
+    next(error);
+  }
+};
